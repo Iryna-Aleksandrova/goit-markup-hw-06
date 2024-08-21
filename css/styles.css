@@ -98,7 +98,7 @@ Hero
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/Hero-mob.jpg);
+    url(../images/hero/Hero-mob.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -114,7 +114,7 @@ Hero
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Hero-mob@2x.jpg);
+      url(../images/hero/Hero-mob@2x.jpg);
   }
 }
 
@@ -171,7 +171,7 @@ Hero
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Hero-tab.jpg);
+      url(../images/hero/Hero-tab.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -183,7 +183,7 @@ Hero
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/Hero-tab@2x.jpg);
+        url(../images/hero/Hero-tab@2x.jpg);
     }
   }
 
@@ -209,7 +209,7 @@ Hero
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Hero-desk.jpg);
+      url(../images/hero/Hero-desk.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -221,7 +221,7 @@ Hero
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/Hero-desk@2x.jpg);
+        url(../images/hero/Hero-desk@2x.jpg);
     }
   }
 
