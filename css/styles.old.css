@@ -14,7 +14,7 @@
   --dairy: #fcfcfc;
 }
 
-/* Header */
+/* Header 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
@@ -24,15 +24,15 @@
 .header-container {
   display: flex;
   align-items: center;
-}
+}*/
 
-/* Навігація Header */
+/* Навігація Header 
 .header-nav {
   display: flex;
   align-items: center;
-}
+}*/
 
-/* Логотип Header */
+/* Логотип Header 
 .header-logo {
   padding: 24px 0;
   margin-right: 76px;
@@ -50,14 +50,14 @@
 
 .header-logo .logo-part {
   color: #2e2f42;
-}
+}*/
 
-/* Список навігації (ul) */
+/* Список навігації (ul) 
 .nav-list {
   display: flex;
   align-items: center;
   gap: 40px;
-}
+}*/
 
 /* Елементи навігації (li) */
 .nav-list .nav-item {
@@ -69,7 +69,7 @@
   display: block;
 }
 
-/* Блок контактів */
+/* Блок контактів 
 .header-contacts {
   font-size: 16px;
   font-weight: 400;
@@ -78,14 +78,14 @@
   color: #434455;
   font-style: normal;
   margin-left: auto;
-}
+}*/
 
-/* Список навігації (ul) */
+/* Список навігації (ul) 
 .contacts-list {
   display: flex;
   align-items: center;
   gap: 40px;
-}
+}*/
 
 /* Основні стилі для посилань у навігації */
 /* Посилання (a) */
@@ -192,7 +192,7 @@
   color: #434455;
 }
 
-/* Section 3 Our Team */
+/* Section 3 Our Team 
 .team {
   display: block;
   background-color: #f4f4fd;
@@ -200,9 +200,9 @@
   height: 732px;
   padding-left: 15px;
   padding-right: 15px;
-}
+}*/
 
-/* Заголовок секції Our Team (h2) */
+/* Заголовок секції Our Team (h2) 
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -212,17 +212,17 @@
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
-}
+}*/
 
-/* Список секції Our Team (ul) */
+/* Список секції Our Team (ul) 
 .team-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
 }
-
-/* Елементи списку секції Our Team (li) */
+*/
+/* Елементи списку секції Our Team (li) 
 .team-item {
   background-color: #ffffff;
   text-align: center;
@@ -231,17 +231,17 @@
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-
-/* Контейнер під зображенням (div) */
+*/
+/* Контейнер під зображенням (div) 
 .team-list .team-name {
   border-bottom: 1px solid var(#e7e9fc);
   border-left: 1px solid var(#e7e9fc);
   border-right: 1px solid var(#e7e9fc);
   padding: 32px 0;
   max-width: 1440px;
-}
+}*/
 
-/* Підзоголовок секції Our Team (h3) */
+/* Підзоголовок секції Our Team (h3) 
 .team-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -249,27 +249,27 @@
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-}
+}*/
 
-/* Текст секції Our Team (р) */
+/* Текст секції Our Team (р) 
 .team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
+}*/
 
-/* Список посилань на соцмережі (ul) */
+/* Список посилань на соцмережі (ul) 
 .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
   margin-top: 8px;
-}
+}*/
 
-/* Посилання на соцмережі (а) */
+/* Посилання на соцмережі (а) 
 .social-ref {
   display: flex;
   justify-content: center;
@@ -282,12 +282,13 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* Стан посилань при наведенні мишкою та фокусі */
+*/
+/* Стан посилань при наведенні мишкою та фокусі 
 .social-ref:hover,
 .social-ref:focus {
   background-color: #404bbf;
 }
+*/
 
 /* Section 4 Our Portfolio */
 .portfolio {
