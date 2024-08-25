@@ -140,27 +140,27 @@
   color: #404bbf; /* колір тексту при активному стані */
 }
 
-/* Section 2 Benefits */
+/* Section 2 Benefits 
 .benefits {
   background-color: #ffffff;
   padding: 120px 0;
-}
+}*/
 
-/* Список секції Benefits (ul) */
+/* Список секції Benefits (ul) 
 .benefits-list {
   display: flex;
   flex-direction: row;
   gap: 24px;
   justify-content: center;
-}
+}*/
 
-/* Елементи списку секції Benefits (li) */
+/* Елементи списку секції Benefits (li) 
 .benefits-list-item {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-}
+}*/
 
-/* Дів з іконками svg (div) */
+/* Дів з іконками svg (div) 
 .benefits-box {
   display: flex;
   width: 264px;
@@ -171,9 +171,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
-}
+}*/
 
-/* Підзоголовки секції Benefits (h3) */
+/* Підзоголовки секції Benefits (h3) 
 .benefits-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -181,16 +181,16 @@
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-}
+}*/
 
-/* Текст секції Benefits (p) */
+/* Текст секції Benefits (p) 
 .benefits-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
+}*/
 
 /* Section 3 Our Team 
 .team {
