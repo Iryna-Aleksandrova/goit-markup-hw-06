@@ -857,7 +857,7 @@ address {
 .portfolio-group {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 48px;
+  gap: 48px;
 }
 
 /* Елементи секції Our Portfolio (li) */
@@ -897,16 +897,12 @@ address {
   transform: translateY(0);
 }
 
-.portfolio-list:hover {
-  cursor: pointer;
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-}
-
 /* Контейнер під зображенням (div) */
 .portfolio-group .portfolio-card {
   border: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   padding: 32px 16px;
   border-top: none;
 }
@@ -938,6 +934,7 @@ address {
   /* Список секції Our Team (ul) */
   .portfolio-group {
     column-gap: 24px;
+    row-gap: 72px;
   }
 
   /* Елементи секції Our Portfolio (li) */
@@ -956,10 +953,577 @@ address {
 
   /* Список секції Our Portfolio (ul) */
   .portfolio-group {
-    flex-wrap: nowrap;
+    row-gap: 48px;
   }
 
   .portfolio-list {
     width: calc((100% - 48px) / 3);
   }
+
+  .portfolio-group .portfolio-card {
+    box-shadow: none;
+  }
+
+  .portfolio-list:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  }
 }
+
+/* ========================================================================================================================================================
+    Footer 
+======================================================================================================================================================== */
+.footer {
+  background-color: #2e2f42;
+  padding: 96px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
+.footer-first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Логотип Footer */
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.footer-logo .logo-part {
+  color: #f4f4fd;
+}
+
+/* Текст першого контейнера Footer (р) */
+.footer-text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 264px;
+}
+
+/* Footer-form */
+.footer-second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Текст другого контейнера Footer (р) */
+.footer-text-links {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Список посилань на соцмережі другого контейнера Footer (ul) */
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Елементи списку посилань на соцмережі другого контейнера Footer (li) */
+.footer-social-links-li {
+  width: 40px;
+  height: 40px;
+}
+
+/* Посилань на соцмережі другого контейнера Footer (а) */
+.footer-social-ref {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Іконка svg Footer */
+.footer-social-icon {
+  fill: #f4f4fd;
+}
+
+/* Зміна кольору посилання Footer */
+.footer-social-ref:hover,
+.footer-social-ref:focus {
+  background-color: #31d0aa;
+}
+
+.form-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.form-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.email-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 288px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
+  margin-bottom: 16px;
+}
+
+.email-input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding-left: 16px;
+}
+
+/* Кнопка відправки форми */
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 4px;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #404bbf;
+}
+
+.subscribe-icon {
+  text-align: center;
+}
+
+/* ========================================================================================================================================================
+  Налаштування для планшету Footer
+======================================================================================================================================================== */
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding-left: 108px;
+    gap: 0;
+  }
+
+  /* Контейнер Footer (div) */
+  .footer-first {
+    max-width: 264px;
+    justify-content: start;
+    align-items: start;
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+
+  /* Текст першого контейнера Footer (р) */
+  .footer-text {
+    text-align: start;
+  }
+
+  /* Footer-form */
+  .footer-second {
+    max-width: 208px;
+    display: inline;
+    justify-content: start;
+    align-items: start;
+    margin: 0;
+  }
+
+  /* Текст другого контейнера Footer (р) */
+  .footer-text-links {
+    text-align: start;
+  }
+
+  .form-subscribe {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .email-input {
+    max-width: 264px;
+    margin-bottom: 0;
+  }
+
+  .form-text {
+    text-align: start;
+  }
+
+  .subscribe-btn {
+    margin-left: 24px;
+  }
+}
+/* ========================================================================================================================================================
+  Налаштування для десктопу Footer
+======================================================================================================================================================== */
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    padding: 0 16px;
+    align-items: baseline;
+  }
+
+  /* Контейнер Footer (div) */
+  .footer-first {
+    margin-right: 120px;
+  }
+
+  .footer-second {
+    margin-right: 80px;
+  }
+
+  .email-input {
+    opacity: 1;
+  }
+}
+
+/* ========================================================================================================================================================
+   Модальне вікно 
+======================================================================================================================================================== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  background-color: rgba(46, 47, 66, 0.4);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Модальний контейнер div */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 288px;
+  min-height: 623px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  transform: translate(-50%, -50%);
+  padding: 72px 16px 24px 16px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop:not(.is-open) .modal {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* Кнопка закриття модального вікна */
+.close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover,
+.close-button:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+/* Текст модального вікна (р) */
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+/* Модальний контейнер для вводу (div) */
+.form-container {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+/* Лейбел */
+.modal-lable {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.modal-container {
+  position: relative;
+}
+
+/* Інпут */
+.form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding-left: 34px;
+  outline: transparent;
+  background-color: transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+  border-color: #4d5ae5;
+}
+
+/* Іконка svg */
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: #2e2f42;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus + .modal-icon {
+  fill: #4d5ae5;
+}
+
+/* Контейнер для коментарів div */
+.textarea-container {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 16px;
+}
+
+/* Поле вводу коментаря */
+.modal-textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  height: 120px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  resize: none;
+  padding: 8px 16px;
+  outline: transparent;
+  margin-top: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Текст для поля вводу коментаря */
+.modal-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  margin-top: 12px;
+}
+
+.modal-textarea:focus {
+  border-color: #4d5ae5;
+}
+
+.checkbox-container {
+  margin-bottom: 24px;
+}
+
+.checkbox-span {
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  fill: transparent;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+/* Посилання Privacy Policy */
+.checkbox-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+.checkbox:checked + .checkbox-label > .checkbox-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+/* Кнопка відправки форми */
+.send-button {
+  display: block;
+  margin: 0 auto;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  text-align: center;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  margin-top: 24px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стан при наведенні мишкою та при фокусі (focus) */
+.send-button:hover,
+.send-button:focus {
+  background-color: #404bbf;
+}
+
+/* ========================================================================================================================================================
+  Налаштування для планшету Модальне вікно 
+======================================================================================================================================================== */
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .form-input {
+    padding-left: 38px;
+  }
+}
+/* ========================================================================================================================================================
+  Налаштування для десктопу Модальне вікно 
+======================================================================================================================================================== */

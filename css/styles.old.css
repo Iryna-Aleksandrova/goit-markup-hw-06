@@ -388,21 +388,21 @@
   color: #434455;
 }
 
-/* Footer */
+/* Footer 
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
-}
+}*/
 
 .footer-container {
   display: flex;
   align-items: baseline;
 }
 
-/* Контейнер Footer (div) */
+/* Контейнер Footer (div) 
 .footer-first {
   margin-right: 120px;
-}
+}*/
 
 /* Логотип Footer */
 .footer-logo {
