@@ -1,2 +1,2 @@
-# goit-markup-hw-05
-Fifth homework CSS
+# goit-markup-hw-06
+sixth homework CSS
